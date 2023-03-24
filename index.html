@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Display HTML</title>
+  </head>
+  <body>
+    <label for="inputBox">Enter an HTML anchor tag:</label>
+    <input size='50' type="text" id="inputBox">
+    <button onclick="displayHTML()">Display HTML</button>
+    <div id="output"></div>
+    
+    <script>
+      function displayHTML() {
+        var input = document.getElementById("inputBox").value;
+        var output = document.getElementById("output");
+        output.innerHTML = input;
+      }
+    </script>
+  </body>
+</html>
